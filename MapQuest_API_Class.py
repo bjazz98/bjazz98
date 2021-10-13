@@ -1,3 +1,5 @@
+"""Utilized MapQuest API to retrieve and process data in JSON format to extract information used in map services. 
+Created a class in Python that calculated the total distance/time between locations, turn by turn navigation and POIs"""
 import json
 import urllib.parse
 import urllib.request
