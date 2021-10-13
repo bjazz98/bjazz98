@@ -1,3 +1,6 @@
+/*Tic Tac Toe game that's playable on the console 
+works by entering the specific coordinates to place 'O' or 'X' pieces
+if game ends because there is a winner or a draw, the game prompts the user if they want to play again*/
 #include "Functions.h"
 #include <iostream>
 using namespace std;
