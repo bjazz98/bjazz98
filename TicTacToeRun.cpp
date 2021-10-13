@@ -1,3 +1,4 @@
+//calls function to run game
 #include "Functions.h"
 
 int main()
