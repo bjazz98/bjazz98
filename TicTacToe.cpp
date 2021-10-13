@@ -62,6 +62,7 @@ void runGame()
 
 void initBoard(char board[3][3])
 {
+//creates 3x3 tic tac toe board with no pieces
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
             board[i][j] = '-';
@@ -71,6 +72,7 @@ void initBoard(char board[3][3])
 
 void placeAPiece(int x, int y, char piece, char board[3][3])
 {
+//places piece on the board by given index 
     if(board[x][y] == '-'){
         board[x][y] = piece;
     }
@@ -79,6 +81,7 @@ void placeAPiece(int x, int y, char piece, char board[3][3])
 
 bool checkForWinner(char piece, char board[3][3])
 {
+    //checks if board has winner horizantally 
     for(int i =0;i<3;i++){
         if((board[i][0] == board[i][1]) && (board[i][1] == board[i][2])){
             if(board[i][0] == piece){
@@ -91,7 +94,7 @@ bool checkForWinner(char piece, char board[3][3])
             }
             }
         }
-
+    //checks if board has winner diagonally 
     if((board[0][0] == board[1][1]) && (board[1][1] == board[2][2])){
         if(board[0][0]== piece){
             return true;
@@ -107,7 +110,7 @@ bool checkForWinner(char piece, char board[3][3])
 
 
 bool checkForDraw(char board[3][3])
-{
+{   //checks if there's a draw by checking if all the pieces all placed and check for winner was not called
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
             if (board[i][j] != 'X' && board[i][j] != 'O')
@@ -120,6 +123,7 @@ bool checkForDraw(char board[3][3])
 }
 
 void displayBoard(char board[3][3])
+//displays the physical board on the console
 {
     for(int i =0;i<3;i++){
         for(int j=0;j<3;j++){
