@@ -1,3 +1,8 @@
+"""Text Editor
+   • Built a functional text editor, similar to Text Edit, using Python Language
+   • Utilized Tkinter modules to successfully design a GUI
+   • Successfully implemented code to create functions to save, open, cut, copy, and paste."""
+
 from tkinter import *
 from tkinter.scrolledtext import *
 from tkinter import messagebox
