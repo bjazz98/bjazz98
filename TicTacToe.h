@@ -1,3 +1,4 @@
+//Tic Tac Toe header (where all the variables and functions are defined)
 #ifndef FUNCTIONS_H_
 #define FUNCTIONS_H_
 
